@@ -1,0 +1,21 @@
+print ("Do you qualify for a home loan?") #Introduction to loan office
+House_value = int(input("What is the price of the home you want to purchase: "))#used a input variable to find value of home
+H = ((House_value/100)*20)# used a equation to find what is 20% of that home value
+Income = int(input ("What is your gross yearly salary: "))#used a input variable to ask for the gross salary
+Credit = int(input("What is your credit score: "))#used a input variable to ask for the credit score
+work = int(input("How many years have you been working with your employer: "))#used a input variable to ask for work history
+if Income >= H: # used a inequaility equation to find if income is 20% of the home value
+    print("This house is in your budget")#if income is 20% of home value may be approved for loan
+else:
+    print("Salary is too low, this house is out of your budget")#salary is unacceptable
+    print ("Thank you for choosing our loan office, you are not qualified for Loan at this moment")#an exit
+if Credit >= 650:#used a inequaility equation to see if credit is equal or greater to 650
+        print ("Your credit score is acceptable")#if credit is greater than or equal to 650 may be approved for loan
+else:
+    print("Your credit score is too low")#credit is unacceptable
+    print ("Thank you for choosing our loan office , you are not qualified for Loan at this moment")#an exit
+if work >= 3:#used a inequaility equation to see if work history is equal or greater to 3 years
+    print ("Your work history is acceptable")#met qualifications for loans
+else:    
+    print("Not enough work history , you are not qualified for Loan at this moment")#work history unacceptable
+    print ("Thank you for choosing our loan office")#an exit
